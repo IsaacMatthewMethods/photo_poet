@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useRef } from 'react';
@@ -152,23 +151,25 @@ export default function Home() {
           </SidebarFooter>
         </Sidebar>
         <div className="container mx-auto flex items-center justify-center p-4">
-          <Card className="w-full max-w-md fade-in" style={{ animation: 'fadeIn 0.75s ease-in-out' }}>
+          <Card className="w-full max-w-2xl fade-in" style={{ animation: 'fadeIn 0.75s ease-in-out' }}>
             <CardContent className="flex flex-col items-center space-y-4">
               {image && (
                 <img
                   src={image}
                   alt="Uploaded"
-                  className="mb-4 max-h-64 rounded-md object-cover"
+                  className="mb-4 max-h-96 rounded-md object-cover"
                   style={{ animation: 'fade-in 0.5s ease-in-out' }}
                 />
               )}
               {poem ? (
-                <Textarea
-                  value={poem}
-                  readOnly
-                  className="w-full text-center text-lg"
-                  style={{ animation: 'fade-in 1s ease-in-out' }}
-                />
+                
+                  <Textarea
+                    value={poem}
+                    readOnly
+                    className="w-full text-center text-lg"
+                    style={{ animation: 'fade-in 1s ease-in-out' }}
+                  />
+                
               ) : (
                 !loading && <p className="text-center text-muted-foreground">No poem generated yet.</p>
               )}
