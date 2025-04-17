@@ -152,7 +152,7 @@ export default function Home() {
           </SidebarFooter>
         </Sidebar>
         <div className="container mx-auto flex items-center justify-center p-4">
-          <Card className="w-full max-w-md fade-in">
+          <Card className="w-full max-w-md fade-in" style={{ animation: 'fadeIn 0.75s ease-in-out' }}>
             <CardContent className="flex flex-col items-center space-y-4">
               {image && (
                 <img
