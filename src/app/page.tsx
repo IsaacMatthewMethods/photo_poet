@@ -146,7 +146,7 @@ export default function Home() {
           </SidebarContent>
           <SidebarFooter>
             <p className="text-center text-sm text-muted-foreground">
-              Powered by Firebase Studio
+              Powered by Firebase Studio Fomarly Project idx
             </p>
           </SidebarFooter>
         </Sidebar>
